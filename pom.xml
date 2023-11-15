@@ -17,7 +17,6 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-
         <!-- Snakeyaml -->
         <dependency>
             <groupId>org.yaml</groupId>
@@ -85,10 +84,10 @@
         </dependency>
 
         <!-- Spring Boot Starter for Security -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>-->
 
         <!-- Lombok (optional) -->
         <dependency>

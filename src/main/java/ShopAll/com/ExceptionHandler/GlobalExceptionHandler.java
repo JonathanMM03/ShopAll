@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 //@RestControllerAdvice(assignableTypes = TaskController.class) //Por clase
 public class GlobalExceptionHandler {
     @ExceptionHandler(UserNotFoundException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ResponseStatus(HttpStatus.OK)
     public ErrorResponse handleUserNotFoundException(UserNotFoundException ex){
         //TO DO
         return (ErrorResponse) new UserNotFoundException(ex.getMessage());

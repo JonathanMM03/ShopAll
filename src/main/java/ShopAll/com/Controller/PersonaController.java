@@ -44,7 +44,7 @@ public class PersonaController {
     @Operation(summary = "Obtener persona con su ID")
     @GetMapping("/{id}") // Mapeo para manejar solicitudes GET en la ruta /users/{id}
     public Persona obtenerPersona(@PathVariable Long id){
-        if (id <= 0){
+        if (id >= 0){
             return personaService.obtenerPersona(id);
         } else {
             throw new UserNotFoundException("El usuario no se encontró con el ID: " + id);
